@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #020202 ;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.header__navbar{
+    display: flex;
+    gap: 80px;
+}
+
+.header__navbar__item {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+strong{
+    color: var(--cor-terciaria);
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap:82px;
+}
+
+.presentation__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.presentation__content h1 {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.presentation__content p {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.presentation__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__links__subtitle{
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentation__links__btn {
+    display: flex;
+    font-size: 24px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 21.5px 0 ;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.presentation__links__btn:hover {
+    background-color: var(--cor-hover);
+}
+
+.presentation__image{
+    width: 50%;
+}
+
+.footer{
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+    
+    .header__navbar {
+        justify-content: center ;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
+}
